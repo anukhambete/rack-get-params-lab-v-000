@@ -38,9 +38,9 @@ class Application
 
   def handle_add(add_term)
     if @@items.include?(add_term)
-      return "#{search_term} is one of our items"
+      return "added #{search_term}"
     else
-      return "Couldn't find #{search_term}"
+      return "We don't have that item"
     end
   end
 
