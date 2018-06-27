@@ -35,4 +35,13 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+
+  def handle_add(add_term)
+    if @@items.include?(add_term)
+      return "#{search_term} is one of our items"
+    else
+      return "Couldn't find #{search_term}"
+    end
+  end
+
 end
